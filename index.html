@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenden | Smart Plant Store</title>
+
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4 flex justify-between items-center sticky top-0 z-50">
+
+        <!-- Logo -->
+        <h1 class="text-3xl font-bold text-green-700">Greenden</h1>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-8 font-medium text-gray-600">
+            <li><a href="./index.html" class="hover:text-green-700 transition">Home</a></li>
+            <li><a href="./product.html" class="hover:text-green-700 transition">Products</a></li>
+            <li><a href="./contact.html" class="hover:text-green-700 transition">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Hamburger Icon -->
+        <button id="menuBtn" class="md:hidden text-green-700 text-3xl focus:outline-none">
+            ☰
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden flex flex-col items-center bg-white shadow-md py-4 space-y-4 md:hidden">
+        <a href="./index.html" class="text-gray-700 hover:text-green-700">Home</a>
+        <a href="./product.html" class="text-gray-700 hover:text-green-700">Products</a>
+        <a href="./contact.html" class="text-gray-700 hover:text-green-700">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-green-100 to-green-50 p-10 md:flex items-center justify-between">
+
+        <div class="md:w-1/2 space-y-6">
+            <p class="text-green-700 font-medium">Premium Indoor & Outdoor Plants</p>
+            <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                Transform Your Space <br> With Nature
+            </h2>
+            <p class="text-gray-600">
+                Discover a curated collection of artificial and natural plants designed to elevate your interior
+                lifestyle.
+            </p>
+
+            <div class="flex gap-4">
+                <button class="bg-green-700 text-white px-6 py-3 rounded-full hover:bg-green-800 transition shadow-lg">
+                    Shop Now
+                </button>
+                <button
+                    class="border border-green-700 text-green-700 px-6 py-3 rounded-full hover:bg-green-700 hover:text-white transition">
+                    Explore More
+                </button>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-4">200+ Plant Species | 500+ Happy Clients</p>
+        </div>
+
+        <div class="hidden md:block md:w-1/2 text-center">
+            <img src="./Images/b1.jpg" class="w-96 mx-auto rounded-xl shadow-2xl" alt="Plants">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 text-center">
+        <h1 class="text-4xl font-bold mb-4">Why Choose Greenden?</h1>
+        <p class="text-gray-600 mb-10">We blend sustainability with modern living.</p>
+
+        <div class="grid md:grid-cols-3 gap-8 px-10">
+
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <h2 class="text-xl font-semibold mb-2 text-green-700">Wide Variety</h2>
+                <p class="text-gray-600">From exotic indoor plants to stylish artificial decor, we offer a large curated
+                    collection.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <h2 class="text-xl font-semibold mb-2 text-green-700">Fast Delivery</h2>
+                <p class="text-gray-600">Quick and safe delivery across regions with eco-friendly packaging.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <h2 class="text-xl font-semibold mb-2 text-green-700">24/7 Assistance</h2>
+                <p class="text-gray-600">Our plant experts are always ready to help you choose the right green partner.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="py-16 text-center">
+        <h1 class="text-4xl font-bold mb-10">Best Sellers</h1>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 px-10">
+
+            <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition">
+                <img src="./Images/p1.jpg" class="rounded-lg mb-3">
+                <h2 class="font-semibold">Rose Plant</h2>
+                <p class="text-green-700 font-bold">$20</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition">
+                <img src="./Images/p2.jpg" class="rounded-lg mb-3">
+                <h2 class="font-semibold">Snake Plant</h2>
+                <p class="text-green-700 font-bold">$25</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition">
+                <img src="./Images/p3.jpg" class="rounded-lg mb-3">
+                <h2 class="font-semibold">Aloe Vera</h2>
+                <p class="text-green-700 font-bold">$18</p>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition">
+                <img src="./Images/p4.jpg" class="rounded-lg mb-3">
+                <h2 class="font-semibold">Peace Lily</h2>
+                <p class="text-green-700 font-bold">$30</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Greenden Promise Section -->
+    <section class="bg-green-700 text-white py-14 text-center">
+        <h1 class="text-3xl font-bold mb-4">Our Commitment to Green Living 🌿</h1>
+        <p class="max-w-2xl mx-auto text-green-100">
+            At Greenden, we believe plants are more than decoration — they are a lifestyle.
+            Our mission is to promote sustainable, eco-friendly living by bringing nature closer to your home and
+            workspace.
+        </p>
+
+        <div class="mt-8 flex flex-col md:flex-row justify-center gap-10">
+            <div>
+                <h2 class="text-2xl font-bold">500+</h2>
+                <p class="text-green-200">Happy Customers</p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold">200+</h2>
+                <p class="text-green-200">Plant Varieties</p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold">100%</h2>
+                <p class="text-green-200">Eco Packaging</p>
+            </div>
+        </div>
+    </section>
+    <!-- Customer Reviews Section -->
+    <section class="py-16 bg-gray-100 text-center">
+        <h1 class="text-4xl font-bold mb-4">What Our Customers Say</h1>
+        <p class="text-gray-600 mb-10">Real experiences from our happy plant lovers 🌿</p>
+
+        <div class="grid md:grid-cols-3 gap-8 px-10">
+
+            <!-- Review 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <p class="text-yellow-500 text-xl mb-2">★★★★★</p>
+                <p class="text-gray-600 mb-4">
+                    "The quality of plants from Greenden is amazing! My living room looks fresh and vibrant now."
+                </p>
+                <h2 class="font-semibold text-green-700">Priya S</h2>
+                <p class="text-sm text-gray-500">Chennai</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <p class="text-yellow-500 text-xl mb-2">★★★★★</p>
+                <p class="text-gray-600 mb-4">
+                    "Fast delivery and eco-friendly packaging impressed me. Highly recommend Greenden!"
+                </p>
+                <h2 class="font-semibold text-green-700">Arun K</h2>
+                <p class="text-sm text-gray-500">Bangalore</p>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <p class="text-yellow-500 text-xl mb-2">★★★★★</p>
+                <p class="text-gray-600 mb-4">
+                    "Beautiful indoor plants at affordable prices. Customer support was very helpful."
+                </p>
+                <h2 class="font-semibold text-green-700">Meena R</h2>
+                <p class="text-sm text-gray-500">Hyderabad</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="bg-gray-100 py-12 text-center">
+        <h1 class="text-3xl font-bold mb-4">Join Our Newsletter</h1>
+        <p class="text-gray-600 mb-6">Get updates on new arrivals & exclusive discounts.</p>
+
+        <input type="email" placeholder="Enter your email" class="border p-3 rounded-l-lg w-1/2 max-w-md">
+        <button class="bg-green-700 text-white px-6 py-3 rounded-r-lg hover:bg-green-800 transition">
+            Subscribe
+        </button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 text-center">
+        <h1 class="text-3xl font-bold text-green-400">Greenden</h1>
+        <p class="mt-3 text-gray-400">Elevating Spaces with Sustainable Green Solutions.</p>
+        <p class="mt-4 text-gray-500">© 2026 Greenden. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
